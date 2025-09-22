@@ -44,7 +44,7 @@ Goal: Build problem-solving skills, Python proficiency, and maintain a professio
 
 ###  Notes / Reflection
 - Key learning: GitHub workflow, structuring repo, Python environment setup  
-- Struggled with: (write if any)  
+- Struggled with: None
 - Next steps: Continue DSA problems, explore more Python concepts, start mini-projects
 
 
