@@ -48,58 +48,54 @@ Goal: Build problem-solving skills, Python proficiency, and maintain a professio
 - Next steps: Continue DSA problems, explore more Python concepts, start mini-projects
 
 
-Day 2
+Here’s your Day 2 entry rewritten in the same style and structure as your Day 1 portfolio:
 
-Goals Completed
 
-Solved 3 DSA problems on LeetCode: Move Zeroes (#283), Running Sum of 1d Array (#1480), Best Time to Buy and Sell Stock II (#122)
+---
 
-Learned Python list operations, in-place modification, and accumulation techniques
 
-📝 DSA Problems Solved
+## Day 2
 
-Move Zeroes (#283, Easy)
+### Goals Completed
 
-Approach: Use a pointer pos to track where the next non-zero element should go. Iterate through the list, swapping non-zero elements to the position pos and increment pos. Moves all zeros to the end in-place.
+* [x] Solved 3 DSA problems on LeetCode: Move Zeroes (#283), Running Sum of 1d Array (#1480), Best Time to Buy and Sell Stock II (#122)
+* [x] Learned Python list operations, in-place modification, and accumulation techniques
 
-Time Complexity: O(n)
+### 📝 DSA Problems Solved
 
-Space Complexity: O(1)
+1. **Move Zeroes (#283, Easy)**
 
-Code: /DSA/Day2/move_zeroes.py
+   * Approach: Use a pointer `pos` to track where the next non-zero element should go. Iterate through the list, swapping non-zero elements to the position `pos` and increment `pos`. Moves all zeros to the end **in-place**.
+   * Time Complexity: O(n)
+   * Space Complexity: O(1)
+   * Code: `/DSA/Day2/move_zeroes.py`
 
-Running Sum of 1d Array (#1480, Easy)
+2. **Running Sum of 1d Array (#1480, Easy)**
 
-Approach: Initialize sum = 0 and an empty list l. Iterate through nums, adding each element to sum and appending it to l. Return l containing the running sums.
+   * Approach: Initialize `sum = 0` and an empty list `l`. Iterate through `nums`, adding each element to `sum` and appending it to `l`. Return `l` containing the running sums.
+   * Time Complexity: O(n)
+   * Space Complexity: O(n)
+   * Code: `/DSA/Day2/running_sum.py`
 
-Time Complexity: O(n)
+3. **Best Time to Buy and Sell Stock II (#122, Easy)**
 
-Space Complexity: O(n)
+   * Approach: Track minimum price so far (`maxy`) and current transaction profit (`profit`). Iterate through `prices`, update `profit` if the current price minus `maxy` is higher. If the price drops below previous minimum, add current `profit` to `max_profit` and reset `profit`. Return total profit.
+   * Time Complexity: O(n)
+   * Space Complexity: O(1)
+   * Code: `/DSA/Day2/best_time_to_buy_sell_stock2.py`
 
-Code: /DSA/Day2/running_sum.py
+### Python / Tools Learned
 
-Best Time to Buy and Sell Stock II (#122, Easy)
+* Reinforced list operations and **in-place modification**
+* Practiced **accumulation patterns** using loops
+* Learned to track variables to calculate running totals efficiently
 
-Approach: Track minimum price so far (maxy) and current transaction profit (profit). Iterate through prices, update profit if the current price minus maxy is higher. If the price drops below previous minimum, add current profit to max_profit and reset profit. Return total profit.
+### Notes / Reflection
 
-Time Complexity: O(n)
+* Key learning: Efficient **array manipulation** and **accumulation**
+* Struggled with: Keeping track of **in-place changes** for Move Zeroes
+* Next steps: Solve more array problems and start exploring **Python functions and dictionaries**
 
-Space Complexity: O(1)
+---
 
-Code: /DSA/Day2/max_profit.py
 
-Python / Tools Learned
-
-Reinforced list operations and in-place modification
-
-Practiced accumulation patterns using loops
-
-Learned to track variables to calculate running totals efficiently
-
-Notes / Reflection
-
-Key learning: Efficient array manipulation and accumulation
-
-Struggled with: Keeping track of in-place changes for Move Zeroes
-
-Next steps: Solve more array problems and start exploring Python functions and dictionaries
