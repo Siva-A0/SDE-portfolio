@@ -48,9 +48,6 @@ Goal: Build problem-solving skills, Python proficiency, and maintain a professio
 - Next steps: Continue DSA problems, explore more Python concepts, start mini-projects
 
 
-Here’s your Day 2 entry rewritten in the same style and structure as your Day 1 portfolio:
-
-
 ---
 
 
@@ -96,6 +93,51 @@ Here’s your Day 2 entry rewritten in the same style and structure as your Day 
 * Struggled with: Keeping track of **in-place changes** for Move Zeroes
 * Next steps: Solve more array problems and start exploring **Python functions and dictionaries**
 
+
 ---
 
 
+## Day 3
+
+### Goals Completed
+
+* [x] Solved 3 DSA problems on LeetCode: **Find Pivot Index (#724)**, **Majority Element (#169)**, **Fibonacci Number (#509)**
+* [x] Learned Python techniques for array traversal, hash maps, and iterative computation
+
+### 📝 DSA Problems Solved
+
+1. **Find Pivot Index (#724, Easy)**
+
+   * Approach: Calculate the total sum of the array `t`. Iterate through the array while maintaining a running left sum `l`. At each index, check if `l` equals `t - l - nums[x]` (i.e., left sum equals right sum). If so, return the index. Otherwise, add the current element to `l`. Returns `-1` if no pivot exists.
+   * Time Complexity: O(n)
+   * Space Complexity: O(1)
+   * Code: `/DSA/Day3/pivot_index.py`
+
+2. **Majority Element (#169, Easy)**
+
+   * Approach: Use a hash map (`d`) to count occurrences of each element. Iterate through the map to find the element with a count greater than `len(nums)//2` and return it. (Alternative sorted array approach is commented out.)
+   * Time Complexity: O(n)
+   * Space Complexity: O(n)
+   * Code: `/DSA/Day3/majority.py`
+
+3. **Fibonacci Number (#509, Easy)**
+
+   * Approach: Handle base cases (`n==0` returns 0, `n==1` returns 1). For `n>1`, use two variables `fib0` and `fib1` to iteratively calculate Fibonacci numbers up to `n` using a for-loop. Return `fib1` as the nth Fibonacci number.
+   * Time Complexity: O(n)
+   * Space Complexity: O(1)
+   * Code: `/DSA/Day3/fibonacci.py`
+
+### Python / Tools Learned
+
+* Iterative computation for **Fibonacci sequence** (space-optimized)
+* Using **hash maps** for frequency counting problems
+* Array traversal techniques and prefix/running sums
+
+### Notes / Reflection
+
+* Key learning: Efficient array traversal and frequency counting; learned to replace recursion with **iterative approaches** for optimization
+* Struggled with: Remembering the pivot condition formula for left/right sums
+* Next steps: Solve more array and recursion problems, start exploring **Python sets and dictionary comprehensions**
+
+
+---

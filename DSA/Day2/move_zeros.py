@@ -10,3 +10,6 @@ class Solution(object):
                 nums[x],nums[pos]=nums[pos],nums[x]
                 pos+=1
         return nums
+    
+        #timecomplexity=O(n)
+        #spacecomplexity=O(1)

@@ -19,4 +19,5 @@ class Solution(object):
                 
         return(max_profit+profit)
         
-        
+        #timecomplexity=O(n)
+        #spacecomplexity=O(1)

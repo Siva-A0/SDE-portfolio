@@ -11,3 +11,6 @@ class Solution(object):
             l.append(sum)
         return l
     
+        #timecomplexity=O(n)    
+        #spacecomplexity=O(1)
+    
