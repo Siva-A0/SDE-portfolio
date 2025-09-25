@@ -141,3 +141,49 @@ Goal: Build problem-solving skills, Python proficiency, and maintain a professio
 
 
 ---
+
+
+## Day 4
+
+### Goals Completed
+
+* [x] Solved 3 DSA problems on LeetCode: **Remove Duplicates from Sorted Array (#26)**, **Squares of a Sorted Array (#977)**, **Pascal's Triangle (#118)**
+* [x] Practiced in-place array modification, sorting after transformation, and constructing patterns with lists
+
+### 📝 DSA Problems Solved
+
+1. **Remove Duplicates from Sorted Array (#26, Easy)**
+
+   * Approach: Use two pointers. Keep index `i` to mark the last unique element. Iterate through the array; if the current element is different from `nums[i]`, increment `i` and swap `nums[i]` with `nums[x]`. Finally, return `i+1` as the new length of the unique elements.
+   * Time Complexity: O(n)
+   * Space Complexity: O(1)
+   * Code: `/DSA/Day4/remove_duplicates.py`
+
+2. **Squares of a Sorted Array (#977, Easy)**
+
+   * Approach: Iterate through the array, square each element, then sort the list before returning it. (Uses Python’s built-in sort for simplicity.)
+   * Time Complexity: O(n log n)
+   * Space Complexity: O(1) (ignoring sorting’s internal memory use)
+   * Code: `/DSA/Day4/squares_of_sorted_array.py`
+
+3. **Pascal's Triangle (#118, Easy)**
+
+   * Approach: Start with base cases for 1 and 2 rows. For larger `numRows`, build each row iteratively by adding adjacent numbers from the previous row, with `1` at the start and end. Append each new row to the result until `numRows` is reached.
+   * Time Complexity: O(n²) (due to nested iteration)
+   * Space Complexity: O(n²) (to store the triangle)
+   * Code: `/DSA/Day4/pascal_triangle.py`
+
+### Python / Tools Learned
+
+* learned **two-pointer technique** for in-place array updates
+* Used Python’s **built-in sort** after transformations
+* Practiced **nested loops and list appending** to generate patterns (Pascal’s Triangle)
+
+### Notes / Reflection
+
+* Key learning: Importance of **in-place modification** and when sorting is acceptable versus optimal
+* Struggled with: Remembering how to correctly build inner elements of Pascal’s Triangle
+* Next steps: Explore **two-pointer optimized solutions** (e.g., for sorted squares without sorting) and practice more pattern-based problems
+
+
+---
