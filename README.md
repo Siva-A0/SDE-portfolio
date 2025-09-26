@@ -187,3 +187,48 @@ Goal: Build problem-solving skills, Python proficiency, and maintain a professio
 
 
 ---
+
+## Day 5
+
+### Goals Completed
+
+* [x] Solved 2 DSA problems on LeetCode: **Palindrome Number (#9)**, **Product of Array Except Self (#238)**
+* [x] Practiced number manipulation, in-place array updates, and handling edge cases
+
+### 📝 DSA Problems Solved
+
+1. **Palindrome Number (#9, Easy)**
+
+   * Approach: Check if the integer `x` is negative → return False. Otherwise, reverse the number using `v = v*10 + n%10` in a loop while reducing `n`. Finally, compare the reversed number with the original to determine if it’s a palindrome.
+   * Time Complexity: O(n) (where n is the number of digits)
+   * Space Complexity: O(1)
+   * Code: `/DSA/Day5/palindrome.py`
+
+2. **Product of Array Except Self (#238, Medium)**
+
+   * Approach:
+
+     * Compute the product of all non-zero elements (`v`) and count zeros (`z`).
+     * If one zero exists, set all non-zero elements to 0 and the zero element to `v`.
+     * If more than one zero, all elements become 0.
+     * If no zeros, replace each element with `v // nums[i]`.
+   * Time Complexity: O(n)
+   * Space Complexity: O(1)
+   * Code: `/DSA/Day5/product_except_self.py`
+
+
+### Python / Tools Learned
+
+* Practiced **integer reversal** without converting to string
+* Learned to handle **edge cases with zeros** in arrays
+* Reinforced **in-place array updates**
+
+### Notes / Reflection
+
+* Key learning: How to manipulate numbers and arrays efficiently **without extra space**
+* Struggled with: Accounting for **multiple zeros** in the product array problem
+* Next steps: Solve more **array and number manipulation problems**, explore **prefix/suffix product optimization**
+
+---
+
+
